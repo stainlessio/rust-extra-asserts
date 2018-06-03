@@ -1,6 +1,6 @@
 [package]
 name = "extra-asserts"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Russell Hay <me@russellhay.com>"]
 description = "Some extra asserts for testing in rust"
 repository = "https://github.com/stainlessio/rust-extra-asserts"
