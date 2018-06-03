@@ -1,0 +1,14 @@
+[package]
+name = "extra-asserts"
+version = "0.1.0"
+authors = ["Russell Hay <me@russellhay.com>"]
+description = "Some extra asserts for testing in rust"
+repository = "https://github.com/stainlessio/rust-extra-asserts"
+license = "MIT"
+
+[badges]
+is-it-maintained-issue-resolution = { repository = "https://github.com/stainlessio/rust-extra-asserts" }
+is-it-maintained-open-issues = { repository = "https://github.com/stainlessio/rust-extra-asserts" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
