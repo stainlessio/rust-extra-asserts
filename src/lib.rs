@@ -1,5 +1,5 @@
-use std::ops::Sub;
 use std::fmt::Debug;
+use std::ops::Sub;
 
 /// Asserts if a floating point is within some epsilon.  This allows
 /// you to compare calculations to make sure it's within some error factor
@@ -20,13 +20,11 @@ use std::fmt::Debug;
 /// let y : f64 = 10.123467890;
 /// assert_approx_eq(x, y, &1e-10);
 /// ```
-pub fn assert_approx_eq<T>(l : T, r : T, epsilon : &T::Output)
-where T : Sub + PartialOrd + Debug + Copy,
-T::Output : Debug + PartialOrd {
-    let diff = if l < r {
-        r - l
-    } else {
-        l - r
-    };
+pub fn assert_approx_eq<T>(l: T, r: T, epsilon: &T::Output)
+where
+    T: Sub + PartialOrd + Debug + Copy,
+    T::Output: Debug + PartialOrd,
+{
+    let diff = if l < r { r - l } else { l - r };
     assert!(diff < *epsilon, format!("{:?} != {:?}", l, r));
 }
